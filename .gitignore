@@ -1,0 +1,20 @@
+# OS
+.DS_Store
+
+# Local AI assistant notes
+CLAUDE.md
+
+# Secrets
+.env
+*.keystore
+*.jks
+key.properties
+local.properties
+
+# Cross-stack (kept ignored even if unused here)
+node_modules/
+build/
+dist/
+.venv/
+venv/
+__pycache__/
