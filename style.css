@@ -4,14 +4,14 @@
 
 /* Variables & Custom Properties */
 :root {
-  --color-bg-dark: #0A0A0C;
-  --color-bg-card: rgba(22, 22, 26, 0.6);
-  --color-bg-card-hover: rgba(30, 30, 38, 0.85);
-  --color-border: rgba(255, 255, 255, 0.08);
-  --color-border-hover: rgba(255, 107, 0, 0.4);
+  --color-bg-dark: #FAFAF8;
+  --color-bg-card: rgba(255, 255, 255, 0.85);
+  --color-bg-card-hover: #FFFFFF;
+  --color-border: rgba(20, 20, 30, 0.1);
+  --color-border-hover: rgba(255, 107, 0, 0.45);
   
-  --color-text-primary: #F3F4F6;
-  --color-text-secondary: #9CA3AF;
+  --color-text-primary: #16161A;
+  --color-text-secondary: #4B5563;
   --color-text-muted: #6B7280;
   
   --color-accent: #FF6B00; /* Consistent Brand Orange */
@@ -84,7 +84,6 @@ body {
   pointer-events: none;
   z-index: -1;
   opacity: 0.4;
-  mix-blend-mode: plus-lighter;
 }
 .glow-1 {
   top: -100px;
@@ -108,7 +107,7 @@ body {
   left: 0;
   width: 100%;
   height: var(--nav-height);
-  background-color: rgba(10, 10, 12, 0.7);
+  background-color: rgba(250, 250, 248, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--color-border);
@@ -189,7 +188,7 @@ body {
 .btn-secondary-nav:hover {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
-  color: var(--color-text-primary) !important;
+  color: #FFFFFF !important;
 }
 
 /* Typography elements */
@@ -256,7 +255,7 @@ body {
   font-weight: 800;
   letter-spacing: -1.5px;
   margin-bottom: 24px;
-  background: linear-gradient(135deg, var(--color-text-primary) 30%, rgba(255, 255, 255, 0.6) 100%);
+  background: linear-gradient(135deg, var(--color-text-primary) 30%, #4B5563 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -289,7 +288,7 @@ body {
 
 .btn-primary {
   background-color: var(--color-accent);
-  color: var(--color-text-primary);
+  color: #FFFFFF;
   border: none;
   box-shadow: 0 4px 20px var(--color-accent-glow);
 }
@@ -301,14 +300,14 @@ body {
 }
 
 .btn-secondary {
-  background-color: rgba(255, 255, 255, 0.04);
+  background-color: #FFFFFF;
   color: var(--color-text-primary);
   border: 1px solid var(--color-border);
 }
 
 .btn-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
+  background-color: #F3F3F0;
+  border-color: rgba(20, 20, 30, 0.25);
   transform: translateY(-2px);
 }
 
@@ -348,7 +347,7 @@ body {
   background-color: var(--color-bg-card-hover);
   border-color: var(--color-border-hover);
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3), 0 0 20px var(--color-accent-glow);
+  box-shadow: 0 12px 30px rgba(20, 20, 30, 0.12), 0 0 20px var(--color-accent-glow);
 }
 
 .product-header {
@@ -411,7 +410,7 @@ body {
 .feature-tag {
   font-size: 0.75rem;
   color: var(--color-text-muted);
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: rgba(20, 20, 30, 0.04);
   padding: 4px 8px;
   border-radius: 6px;
   border: 1px solid var(--color-border);
@@ -436,8 +435,8 @@ body {
   margin-top: 16px;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--color-border);
+  background-color: #EFEFEA;
   aspect-ratio: 16 / 10;
   display: flex;
   align-items: center;
@@ -460,7 +459,7 @@ body {
 .about-section {
   padding: 100px 0;
   border-top: 1px solid var(--color-border);
-  background: linear-gradient(180deg, var(--color-bg-dark) 0%, rgba(22, 22, 26, 0.4) 100%);
+  background: linear-gradient(180deg, var(--color-bg-dark) 0%, #F1F0EC 100%);
 }
 
 .about-grid {
@@ -608,7 +607,7 @@ body {
 /* Footer Section */
 .footer {
   border-top: 1px solid var(--color-border);
-  background-color: #050507;
+  background-color: #F1F0EC;
   padding: 40px 0;
 }
 
