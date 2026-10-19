@@ -359,6 +359,10 @@ body {
 
 .product-icon {
   font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .product-link {
